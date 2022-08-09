@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Task List 2021</title>
+
+	<!-- <link rel="stylesheet" href="css/main.css" /> -->
+		<link rel="stylesheet" href="css/table.css" />
+
+</head>
+<body>
+	
+	<header>
+		<h1>Test of web component and new JS </h1>
+		<form id="new-task-form">
+			<!-- <input 
+				type="text" 
+				name="new-task-input" 
+				id="new-task-input" 
+				placeholder="What do you have planned?" /> -->
+
+				<input type="text" placeholder="Name" class="name_product" id="name_product" aria-describedby="emailHelp">
+				<!-- SELECT INPUT -->
+				<input type="text" placeholder="Category" class="category_product" id="category_product">
+				<!-- Range -->
+				<input type="text" placeholder="Quantity" class="quantity_product" id="quantity_product">
+				<!-- with currency -->
+				<input type="text" placeholder="Price" class="price_product" id="price_product">
+
+
+				<!-- <button type="submit"  id="submit-new-prod" class="btn btn-primary">Add task</button> -->
+				<button type="submit"  id="submit-new-prod" class="btn btn-primary">Add Product</button>	
+
+                <select name="category" class="category" >
+                    <!-- ja by som to hodil do mapu a pre kazdé jedno vygenerovat option -->
+                    <option value="meat">meat</option>
+                    <option value="milk">milk</option>
+                    <option value="milk">tt</option>
+                    <option value="milk">ffmilk</option>
+
+                </select>
+		</form>
+
+        <div class="todo-list-container">
+            <ul class="todo-list">
+                <!-- here I neeed add all new Prod, so inside todo-list potrebujem appnednut newDiv -->
+
+
+                
+            </ul>
+        </div>
+
+
+	</header>
+	<main>
+		<section class="task-list">
+			<h2>Tasks:</h2>
+
+			<div id="tasks">
+
+				<!-- TABULKA - ako web komponent ?  :-->
+
+				<table>
+					<tr>
+					  <th>Company</th>
+					  <th>Contact</th>
+					  <th>Action</th>
+					</tr>
+				  </table>
+				  
+
+
+        <!-- generovanie a pridavaníe rowow - riadkov  spolu s buttonmi web componentami :-->
+
+				<!-- <div class="task">
+					<div class="content">
+						<input 
+							type="text" 
+							class="text" 
+							value="A new task"
+							readonly>
+					</div>
+					<div class="actions">
+						<button class="edit">Edit</button>
+						<button class="delete">Delete</button>
+					</div>
+				</div> -->
+
+			</div>
+		</section>
+	</main>
+
+	<script src="js/app_3V.js"></script>
+	<!-- <script src="js/main.js"></script> -->
+</body>
+</html>

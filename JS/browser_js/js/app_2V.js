@@ -1,0 +1,1 @@
+// chcem to davat do pola ako objekty, premaovat, deletovat itemy cez filter, updatovat itemy, pridávat ich do tabulky
